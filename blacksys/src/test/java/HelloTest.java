@@ -16,6 +16,9 @@ import blacksys.StringPrinter;
 
 public class HelloTest {
 
+	/**
+	 * registerSingleton() 싱글톤빈을 등록
+	 */
 	@Test
 	public void test() {
 		StaticApplicationContext ac = new StaticApplicationContext();
