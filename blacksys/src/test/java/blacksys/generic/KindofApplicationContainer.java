@@ -1,3 +1,4 @@
+package blacksys.generic;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -45,7 +46,7 @@ public class KindofApplicationContainer {
 		DefaultListableBeanFactory bf = new DefaultListableBeanFactory();
 		Properties p = new Properties();
 		PropertiesBeanDefinitionReader reader = new PropertiesBeanDefinitionReader(bf);
-		reader.loadBeanDefinitions(new ClassPathResource("blacksys/generic/propertyApplicationContext.properties", getClass()));
+		reader.loadBeanDefinitions(new ClassPathResource("/blacksys/generic/propertyApplicationContext.properties", getClass()));
 		Hello hello = (Hello)bf.getBean("hello", Hello.class);
 		hello.print();
 		
